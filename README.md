@@ -9,6 +9,7 @@ Happy Todo is a todo app I'm building to practice backend development. It lets u
 - HTML
 - CSS
 - JavaScript
+- SQlite 
 
 ## Getting Started
 
