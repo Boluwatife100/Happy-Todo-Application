@@ -1,0 +1,19 @@
+{
+  "name": "chapter_3",
+  "version": "1.0.0",
+  "description": "A fullstack todo application that uses a NodeJs Backend, a SQlite database and JWT Athentication",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Boluwatife",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

@@ -1,0 +1,50 @@
+###
+
+
+GET http://localhost:5003
+
+### Register a user 
+POST http://localhost:5003/auth/register
+Content-Type: application/json
+
+{
+    "username": "hacked@gmail.com",
+    "password": "23232323"
+}
+
+###  login a user 
+
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+    "username": "hacked@gmail.com",
+    "password": "23232323"
+}
+
+
+###
+GET http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzkxNDQ0NDg0LCJleHAiOjE3OTE1MzA4ODR9.m9GcM8hVj-4Qk7QbbdOfi43Iwses4ZeXfC9IJWz8B8U
+
+###
+POST http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzkxNDQ0NDg0LCJleHAiOjE3OTE1MzA4ODR9.m9GcM8hVj-4Qk7QbbdOfi43Iwses4ZeXfC9IJWz8B8U
+Content-Type: application/json
+
+{
+    "task": "finish the project"
+}
+
+###
+PUT http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzkxNDQ0NDg0LCJleHAiOjE3OTE1MzA4ODR9.m9GcM8hVj-4Qk7QbbdOfi43Iwses4ZeXfC9IJWz8B8U
+Content-Type: application/json
+
+{
+    "completed": "1"
+}
+
+###
+DELETE http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzkxNDQ0NDg0LCJleHAiOjE3OTE1MzA4ODR9.m9GcM8hVj-4Qk7QbbdOfi43Iwses4ZeXfC9IJWz8B8U
